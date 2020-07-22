@@ -5,6 +5,9 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  if (password == null){
+    return;
+  }
   passwordText.value = password;
 }
 
